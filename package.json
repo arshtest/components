@@ -1,13 +1,9 @@
 {
-  "name": "components",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/arshdeepkumar482"
-  },
+  "name": "@arshtest/comps",
   "version": "1.0.0",
   "description": "react components",
   "scripts": {
-    "rollup": "rollup -c",
-    "publish": "npm publish"
+    "build": "rollup -c"
   },
   "author": "Arshdeep",
   "license": "ISC",
@@ -15,10 +11,14 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
-    "@types/react": "^18.0.15",
+    "@types/lodash": "^4.14.186",
+    "@types/mixpanel-browser": "^2.38.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "css-loader": "^6.5.1",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-postcss": "^4.0.1",
@@ -26,10 +26,18 @@
     "sass-loader": "^12.3.0",
     "typescript": "^4.7.4"
   },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "ldoash": "^0.0.1-security",
+    "mixpanel-browser": "^2.45.0"
+  }
 }
