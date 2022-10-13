@@ -47,7 +47,7 @@ jobs:
       # Push repository changes
       - name: Push changes to repository
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git push origin release/${{ env.NEW_VERSION }}
 
