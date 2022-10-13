@@ -42,7 +42,8 @@ jobs:
       - name: Commit and package.json changes
         run: |
           git add "package.json"
-          git commit -m "chore: release ${{ env.NEW_VERSION }}"    
+          git commit -m "chore: release ${{ env.NEW_VERSION }}"   
+          git tag ${{ env.NEW_VERSION }}
 
       # Push repository changes
       - name: Push changes to repository
