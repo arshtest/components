@@ -38,6 +38,7 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "ldoash": "^0.0.1-security",
-    "mixpanel-browser": "^2.45.0"
+    "mixpanel-browser": "^2.45.0",
+    "tslib": "^2.4.0"
   }
 }
